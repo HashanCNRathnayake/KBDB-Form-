@@ -1,5 +1,6 @@
 <?php
 require '../db.php';
+session_start();
 if ($_SESSION['role'] !== 'admin') exit('Access denied');
 
 $id = (int)$_GET['id'];

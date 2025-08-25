@@ -1,5 +1,6 @@
 <style>
     html {
+        padding: 0px 30px;
         overflow: auto;
         scrollbar-width: none;
         /* Firefox */
@@ -26,7 +27,7 @@
 
         <a class="navbar-brand"
             href="<?= htmlspecialchars($baseUrl) ?>index.php">
-            MyApp
+            KBDB Form
 
         </a>
 
@@ -38,15 +39,20 @@
             <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
                 <?php if ($_SESSION['role'] === 'admin'): ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>admin/dashboard.php">Dashboard</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>admin/users.php">Manage Users</a>
                     </li>
+
                 <?php endif; ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>index.php">Message History</a>
+                    <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>index.php">Form</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>admin/dashboard.php">View</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= htmlspecialchars($baseUrl) ?>categories.php">Categories</a>
                 </li>
             </ul>
             <div class="d-flex">

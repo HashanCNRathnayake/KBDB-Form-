@@ -34,16 +34,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-
 <head>
     <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
-    <div class="container">
+<body class=" ">
+    <div class=" ">
         <?php include '../components/navbar.php'; ?>
 
         <div class="d-flex flex-column align-items-center">

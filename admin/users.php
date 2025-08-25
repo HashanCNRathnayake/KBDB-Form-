@@ -13,20 +13,19 @@ if ($_SESSION['role'] !== 'admin') {
     exit;
 }
 $result = $conn->query("SELECT id, username, role FROM users");
+
+require __DIR__ . '/../components/header.php';
+require __DIR__ . '/../components/navbar.php';
+
 ?>
-<!DOCTYPE html>
-<html>
 
 <head>
     <title>User Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body class=" ">
 
-    <div class="container">
-
-        <?php include '../components/navbar.php'; ?>
+    <div class=" ">
 
         <!-- <a href="../index.php" class="btn btn-secondary my-3">← Back</a> -->
         <div class="d-flex align-items-center justify-content-between">

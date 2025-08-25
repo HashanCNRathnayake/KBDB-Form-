@@ -1,9 +1,15 @@
-<?php require 'db.php';
+<?php
+session_start();
+require __DIR__ . '/db.php';
 
 require_once __DIR__ . '/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-// $baseUrl = $_ENV['BASE_URL'] ?? '/';
+$baseUrl = $_ENV['BASE_URL'] ?? '/';
+
+// require __DIR__ . '/components/header.php';
+
+
 
 ?>
 <!DOCTYPE html>
@@ -14,6 +20,7 @@ $dotenv->load();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
 </head>
